@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="test">HEllo I am test div</div>
+
+
+    <input type="text" name="" id="" onclick="console.log('Hello I AM CLICKED')" onkeydown="console.log('I am down')"
+        onkeyup="console.log('I am up')" onkeypress="console.log('I am press')"
+        onmouseenter="this.style.backgroundColor = 'green';" onmouseout="this.style.backgroundColor = 'red';">
+
+    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        // 1. do not use space or special character in variable name.
+        // 2. Do not start name with numeric values
+        // 3. You cant use keywords for variable name
+        // if,for,echo,print
+
+        // let fullName = "yogesh more";
+        // let a1 = "yogesh more";
+        // a = 10; // global variable - old js
+        // var d = 60; // - local variable - old js // local variable 
+        // let b = 10;// Introduce in ES-6 // local variable 
+        // const c = 50; // Introduce in ES-6
+
+        //syntactic sugar
+        const pie = 3.14
+        console.log(pie)
+
+        function checkName() {
+            companyName = "Darwin";
+            // Error
+            // let country = "INDIA";
+            // let country = "INDIA";
+            // buggy
+            // var country = "INDIA";
+            // var country = "USA";
+            console.log("Name is:", companyName, country);
+        }
+        checkName();
+        console.log("country==>", companyName);
+    </script>
+</body>
+
+</html>

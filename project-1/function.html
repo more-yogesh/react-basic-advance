@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // function
+        /*
+        function greet() {
+            // code block
+            console.log("Hey Good Morning!");
+        }
+        */
+        //greet()
+
+        // function greet(param) {
+        //     console.log("Hey Good Morning!", param);
+        // }
+        // greet("A");
+        // greet("B");
+        // greet("C");
+
+        // function greet(name = 'Guys') {
+        //     // dafault arguments
+        //     console.log("Good Morning, ", name);
+        // }
+        // greet();
+        // greet("Yogesh");
+
+        function square(x) {
+            // console.log(x*x);
+            return x * x;
+        }
+        let y = square(2) + 10;
+        // console.log(y);
+
+        // var cube = function (num) {
+        //     // anonymus
+        //     return num*num*num;
+        // }
+
+        // console.log(cube(2));
+
+        // ES-6 style function Arrow Functions
+
+        
+        // const newGreet = () => {
+        //     console.log("Good Morning");
+        //     console.log("Good Morning");
+        //     console.log("Good Morning");
+        // }
+
+        // const newGreet = () => console.log("Good Morning");
+        // const newGreet = (name="Guys") => console.log("Good Morning", name);
+        const newGreet = name => console.log("Good Morning", name);
+
+        newGreet("Darwin");
+        newGreet("Darwin");
+        newGreet("Darwin");
+        newGreet();
+
+        let a = true;
+        console.log(typeof a);
+        
+
+
+    </script>
+</body>
+
+</html>
