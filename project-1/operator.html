@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn" onclick="toggleText()">YES</button>
+
+    <script>
+        const toggleText = () => {
+            let currentText = document.getElementById('btn').textContent;
+            let newText = currentText != 'No' ? 'No' : 'YES';
+            document.getElementById('btn').innerText = newText;
+        }
+        // x = 10;
+        // y = 5;
+        // x = x + y;
+        // console.log(x);
+        // console.log('15' + x);
+        // x = ?
+
+        let x = 10;
+        let y = 3;
+
+        //x = x + 1; // short x++ // x = x + 50;
+
+        //let z = x % y; // reminder // modules
+        // console.log("Z=", z);
+
+        // console.log(x++);//10 // post increament
+        // console.log(x);//11
+
+        // console.log(++x);//11
+        // console.log(x);//11
+
+        // z = x++ + x++;
+        // console.log(z);
+
+        // x += x; // x = x + x;
+        // x -= x; // x = x - x;
+        // x *= x; // x = x*x
+        // x %= x;// x = x % x;
+        // console.log(x);
+
+        // comparison opertor
+        // console.log(x == '10');
+        // console.log(x !== '10');
+
+
+        // debugger;
+        console.log(x < y);
+        console.log(x > y);
+
+        currentAge = 9;
+        console.log("Eligible:", currentAge >= 18);
+
+        let message = currentAge >= 18 ? 'Yes! You can vote' : 'Sorry! try next year';
+
+        console.log(message);
+
+        // condition ? <true> : <false>;
+
+
+        // logical &&
+
+
+        // console.log(10 > 9 && 15 < 10);
+
+        console.log(((true || false) && (true || false)) && true || false);
+
+        // B.O.D.M.A.S.
+        // console.log(!true);
+
+
+
+    </script>
+</body>
+
+</html>
