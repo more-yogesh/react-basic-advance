@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const teams = [{
+            name: "india",
+            topPlayers: ["a", "b", "c"],
+            totaMatches: 156,
+            totalWin: 15,
+            totalLost: 10,
+            winPercentage: function () {
+                return this.totaMatches / this.totalWin * 100;
+            }
+        }];
+
+        // console.log(teams[0].winPercentage());
+        // const result = !(10 == 10) ? 'YES' : 'No'
+        // console.log(result);
+
+        // console.log(typeof (10 == 10));
+        // spread operator (...)
+
+        // console.log("teams", teams);
+
+        // console.log(...["india", "usa", "china"]);
+
+        let data = {
+            name: "india",
+            continent: "asia",
+            independace: "15th August"
+        };
+
+        data = { ...data, flag: "Tiranga" };
+
+        console.log(data);
+
+        const { name, ...other } = { ...data };
+
+        // console.log(data.name);
+        console.log(other);
+
+    </script>
+</body>
+
+</html>

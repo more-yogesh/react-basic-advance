@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #data {
+            background-color: aqua;
+            padding: 10px;
+            margin: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="data">
+
+    </div>
+    <button onclick="updateInfo()">Add Data</button>
+    <script>
+
+        function updateInfo() {
+            let name = "Vijay";
+            let lastName = "Setupati";
+            let education = "12th PAss";
+            let fullName = name + " " + lastName;
+            console.log(fullName);
+            document.getElementById('data').innerText = '<div><h1>Name: ' + fullName + '</h1><h2>Eucation: ' + education + '</h2></div>';
+            console.log("1", 10 + '10');
+            console.log("2", 10 + 'Ramesh');
+            console.log("2", 10 + 50.50);
+        }
+
+
+       let percetage;
+        console.log("Your Percetages are: ", percetage ?? "Under Process");
+
+
+    </script>
+</body>
+
+</html>
