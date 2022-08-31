@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="dfgsjhfgsjdhgfjsgjsfdg">
+    <meta name="description"
+        content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique et sunt ratione minus delectus corrupti? Maiores reiciendis dolores esse obcaecati nobis velit distinctio recusandae temporibus animi. Id perspiciatis quaerat maiores.">
+    <title>Taj Details</title>
+    <style>
+        #superText {
+            /* border: 5px solid black; */
+            /* background-color: red; */
+        }
+
+        .hero {
+            background-color: aqua;
+            color: antiquewhite;
+            margin: 10px;
+            padding: 50px;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+
+        .border {
+            border: 3px double greenyellow;
+            background-color: rgb(149, 149, 149);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class vs id -->
+    <div class="hero border" id="superText">
+        hero section
+    </div>
+    <div style="background-color: aqua;">HELLO</div>
+    <span style="background-color: aqua;">HELLO</span>
+    <h1 class="hero">Hello</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="as">Add Name</label>
+        <input type="text" name="fname" class="abd" id="as" placeholder="First Name" value="456" />
+        <input type="email" name="email" class="abd" />
+        <input type="password" name="password" class="abd" />
+        <input type="number" name="contact" required />
+
+        <!-- <button type="button">BTN ADD</button> -->
+        <!-- <button type="reset">SUBMIT</button> -->
+        <br />
+        <input type="checkbox" name="hobbies" id="" value="dance">Dance
+        <input type="checkbox" checked name="hobbies" id="" value="music">Music
+        <br />
+        <input type="radio" checked name="yes" id="agree" value="yes">
+        <label for="agree">Lorem ipsu</label>
+        <br />
+        <select name="country">
+            <option value="">INDIA</option>
+            <option value="" selected>USA</option>
+            <option value="">CHINA</option>
+        </select>
+        <br />
+        <textarea name="address" cols="50" rows="10">dfgdfdfg</textarea>
+        <br />
+        <input type="date" name="date" id="">
+        <br />
+        <input type="file" name="resume" id="">
+        <input type="hidden" name="secret_key" value="123" />
+        <button type="submit">ADD</button>
+    </form>
+</body>
+
+</html>
