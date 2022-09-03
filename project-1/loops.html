@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="test"></div>
+    <script>
+        const students = ['std1', 'std2', 'std3', 'std4'];
+        let outPut = '';
+        console.log('Hello');
+        for (let start = 0; start <= 3; start++) {
+            // outPut = outPut+students[start]+"<hr/>";
+            outPut += students[start]+"<hr/>";
+        }
+        document.getElementById('test').innerHTML = outPut;
+        console.log('hi');
+
+        // jaadu
+
+        for(let i=1;i<=3;i++){
+            console.log("MAIN",i);
+            for(let j = 1;j<=2;j++){
+                console.log("CHILD",j);
+            }
+        }
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+        // *
+        // *
+        // * 
+        // *
+        // * 
+        let ele = document.getElementById('test');
+        let x = '';
+        for(let w=1;w<=5;w++){
+            for(let row = 1;row<=w;row++){
+                x = x+"*";
+            }
+            x += "<br/>";
+        }
+        ele.innerHTML = x;
+
+        
+
+
+        // for(let table = 2; table <= 20;table = table + 2) {
+        //     console.log(table)
+        // }
+
+        // for(let twenty=20;twenty>=2;twenty=twenty-2){
+        //     console.log(twenty);
+        // }
+
+
+
+
+
+
+
+
+        // console.log(students[0]);
+        // console.log(students[1]);
+        // console.log(students[2]);
+        // console.log(students[3]);
+
+        //for(initialization;conditionaCheck;increment/decrement)
+        //statements
+
+        // let start = 1;
+        // for (start; start <= 10; start = start + 1) {
+        //     console.log(start);
+        // }
+        
+
+
+        // console.log(students.length);
+    </script>
+</body>
+
+</html>
