@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pat"></div>
+    <script>
+        let teams = ['india', 'usa', 'bharat'];
+
+        console.log(teams.sort())
+
+        console.log(teams.length);
+
+        for (l = 0; l < teams.length; l++)
+            console.log(teams[l]);
+
+        teams.map((team, index) => {
+            console.log(index + 1, team);
+        });
+
+        const checkNumber = (number) => {
+            return number % 2 === 0;
+        }
+
+        checkNumber(10); // function
+
+        // arr.map();// prsototype functions
+
+
+        let pie = 22 / 7;
+
+        console.log((parseFloat(pie) + 2).toFixed(2));
+
+
+        let greet = "Welcome to darwin institute";
+
+        console.log("It contains", greet.startsWith("Welcome"));
+
+        console.log(greet.charAt(3));
+
+
+        let dateToday = new Date();
+
+        console.log(dateToday.getFullYear());
+        console.log(dateToday.getHours());
+        console.log(dateToday.getMonth());
+
+
+        let triangle = document.getElementById('pat');
+
+        for (j = 1; j <= 5; j++) {
+            for (k = 1; k <= j; k++) {
+                triangle.innerHTML += k;
+            }
+            triangle.innerHTML += '<br/>';
+        }
+
+        for (j = 1; j <= 5; j++) 
+            console.log("*".repeat(j));
+        
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+
+
+
+    </script>
+</body>
+
+</html>
