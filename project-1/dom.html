@@ -13,13 +13,23 @@
     <h1 id="heading2">Hello</h1>
     <h1 id="heading3">Hello</h1>
     <div id="content">
-        <h2>This is sub</h2>
+        <h2>This is sub</h2>gbcjjyhf
         <span>Demo</span>
     </div>
+    <div id="content">
+        <h2>This is sub</h2>gbcjjyhf
+        <span>Demo</span>
+    </div>
+    <form>
+        <input type="text" name="gender" value="male" class="test">
+        <input type="text" name="gender" value="male" class="test">
+    </form>
     <script>
+        console.log(document.getElementsByClassName('test')[0]);
+        console.log(document.getElementById('content'));
+        // document.getElementsByClassName('');
         // document.getElementById('content').innerText = "<b>TEST</b>";
-        // document.getElementById('content').innerHTML = "<b>TEST</b>";
-
+        document.getElementById('content').innerHTML = "<b>TEST</b>";
 
         var name = "Darwin";
         var name = "Yogesh";
@@ -28,14 +38,12 @@
         // used in old version of javascript
         console.log(name);
 
-
         let lastName = "Kapoor";
         // let lastName = "Sharma";
 
         // local variable
         // Can NOT definined again and again
-        // Intorduced in lates version of JS which is ES-6
-
+        // Intorduced in lates version of JS which is ES-6(2016)
 
 
         // nothing
@@ -46,6 +54,7 @@
         // static can not change value once initialized
         // can not redeclare
         // local variable
+        // Instroduce in ES-6
 
 
         const aBlock = () => {
@@ -63,8 +72,6 @@
 
         aBlock();
         bBlock();
-
-
 
     </script>
 </body>

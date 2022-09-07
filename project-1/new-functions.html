@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // callback functions (anonymus function)
+        let check = function (number) {
+            return number % 2 === 0 ? 'its even' : 'its odd number';
+        }
+
+        console.log(check(11));
+
+        function changeName(arg = 'abc') {
+            return x = 50 + 52;
+            // re-usability
+            // Independent code block
+            console.log("Mr. " + arg.toUpperCase());
+        }
+        // es - 6 Arrow Function
+        // function with single statement
+        // const changeNameNew = (arg = 'abc') => {
+        //     console.log("Mr. " + arg.toUpperCase());
+        // }
+        // const changeNameNew = (arg = 'abc') => console.log("Mr. " + arg.toUpperCase());
+        // function with single argument
+        const changeNameNew = arg => console.log("Mr. " + arg.toUpperCase());
+
+
+        changeNameNew('Binod');
+
+        const dd = changeName('ramesh');
+        console.log(dd);
+        changeName('vijay');
+        changeName('suresh');
+
+        // changeName();
+        // changeName();
+        // changeName();
+        // changeName();
+        // changeName();
+        // changeName();
+        // changeName();
+    </script>
+</body>
+
+</html>
