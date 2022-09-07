@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hi this is title</title>
+</head>
+
+<body>
+    <h1 id="heading">Hello</h1>
+    <h1 id="heading2">Hello</h1>
+    <h1 id="heading3">Hello</h1>
+    <div id="content">
+        <h2>This is sub</h2>
+        <span>Demo</span>
+    </div>
+    <script>
+        // document.getElementById('content').innerText = "<b>TEST</b>";
+        // document.getElementById('content').innerHTML = "<b>TEST</b>";
+
+
+        var name = "Darwin";
+        var name = "Yogesh";
+        // local variable
+        // Can definined again and again - buggy - confusion
+        // used in old version of javascript
+        console.log(name);
+
+
+        let lastName = "Kapoor";
+        // let lastName = "Sharma";
+
+        // local variable
+        // Can NOT definined again and again
+        // Intorduced in lates version of JS which is ES-6
+
+
+
+        // nothing
+        // global variable
+        // no need to write var, const or let in front of variable name
+
+        // const 
+        // static can not change value once initialized
+        // can not redeclare
+        // local variable
+
+
+        const aBlock = () => {
+            pie = 3.14;
+            let myLocalA = 3.14;
+            // console.log("myLocalA", myLocalA);
+        }
+
+        const bBlock = () => {
+            let myLocalB = 555;
+            // console.log("myLocalB", myLocalB);
+            // console.log("myLocalA", myLocalA);
+            console.log("pie", pie);
+        }
+
+        aBlock();
+        bBlock();
+
+
+
+    </script>
+</body>
+
+</html>
