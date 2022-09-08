@@ -61,15 +61,33 @@
             triangle.innerHTML += '<br/>';
         }
 
-        for (j = 1; j <= 5; j++) 
+        for (j = 1; j <= 5; j++)
             console.log("*".repeat(j));
-        
+
 
         // *
         // **
         // ***
         // ****
         // *****
+
+        let price = 19.55;
+        console.log(Math.round(price));
+
+
+        // REGEX
+
+        let nameOfIns = "Google X Welcome to the Google";
+
+        let email = "yogesh@gmail.com";
+
+        let patter = /\S+@\S+\.\S+/;
+
+        console.log("RESULT IS", patter.test(email));
+
+        console.log(nameOfIns.replace(/x/ig, '*'));
+        // ignor
+
 
 
 
