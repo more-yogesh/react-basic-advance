@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // user define functions
+        // function dTof() {
+        //     // code
+        // }
+        // function dTof(arg, arg1, arg2, arg4) {
+        //     // code
+        // }
+
+
+        // function greet() {
+        //     // function with no return type
+        //     console.log("Good Morning,", new Date());
+        // }
+
+
+        // const greet = () => {
+        //     console.log("Good Morning,", new Date());
+        // }
+
+        // const greet = () => console.log("Good Morning,", new Date());
+
+
+        // const greet = name => console.log("Good Morning, ", name, new Date()); // if single arg
+
+        
+
+
+        greet('yogesh');
+
+
+
+        // create fuction which can sum string numbers
+        // ex: '10', '5.5'
+
+        let a = '10'
+        let b = '5.5'
+
+        // function stringSum(arg1, arg2) {
+        //     let newA = Number(arg1);
+        //     let newB = Number(arg2);
+        //     return newA + newB;
+        //     //alert('hello');
+        // }
+
+        // function stringSum(arg1, arg2 = 0) {// function with default arg
+        //     let newA = Number(arg1);
+        //     let newB = Number(arg2);
+        //     return newA + newB;
+        //     //alert('hello');
+        // }
+
+
+        // syntatic sugar // es-6
+        const stringSum = (arg1, arg2 = 0) => {
+            let newA = Number(arg1);
+            let newB = Number(arg2);
+            return newA + newB;
+        }
+
+        let x = 1000;
+        let y = x + stringSum('10');
+        console.log(y);
+
+
+        // stringSum(a, '30');
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" onclick="loadData()">Hello World</div>
+    <script>
+        // AJAX = Asyncronus Javascript And XML
+        // API = https://jsonplaceholder.typicode.com/todos/1
+        function loadData() {
+            xmlObj = new XMLHttpRequest();
+            // Initialize JS object
+            // Initialize request
+            // Send Request
+            // Process - Pass - 200 /Fail - Error: 402, 404, 500 etc...
+            // Success = 200
+
+            xmlObj.onreadystatechange = () => {
+                if (xmlObj.readyState === 4 && xmlObj.status === 200) {
+                    // console.log("responseText", xmlObj.responseText);
+                    let todo = JSON.parse(xmlObj.responseText);
+                    console.log(todo);
+                } else {
+                    //loading code
+                }
+            }
+            xmlObj.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
+            xmlObj.send();
+        }
+    </script>
+</body>
+
+</html>
