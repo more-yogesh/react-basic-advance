@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="data">
+
+    </div>
+    <button onclick="loadBlogs()">LOAD DATA</button>
+    <script>
+        const loadBlogs = () => {
+            let httpObj = new XMLHttpRequest;
+            httpObj.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+            httpObj.send();
+            httpObj.onreadystatechange = () => {
+                // if (httpObj.readyState < 4) {
+                //     document.getElementById('data').innerHTML = '<h1>Loading...</h1>';
+                // }
+                let list = '';
+                if (httpObj.readyState === 4 && httpObj.status === 200) {
+                    let posts = JSON.parse(httpObj.responseText);
+                    posts.map((post) => {
+                        // console.log("==>", post.userId);
+                        list += `<div class="post">
+                                    <div class="post-content">
+                                        <h3>${post.id}. ${post.title}</h3>
+                                        <p>${post.body}</p>
+                                    </div>
+                                    <hr/>
+                                </div>`
+                    });
+                    document.getElementById('data').innerHTML = list;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
