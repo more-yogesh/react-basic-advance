@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 10.50;
+        // dynamic type casting // loosely typed programming languages
+        console.log(typeof a);
+        console.log(typeof true);
+        console.log(typeof [1, 2, 3]);
+        console.log(typeof { name: "india", win: 13 });
+        // let names = ["vijay", "ajay", "dhimka", "falana"];
+
+        let names = ["vijay", 1, [100, 200, 402], { name: "darwin", year: 2020 }];
+
+        console.log(names[2][1]);
+        console.log(names[3].name);
+
+        // {
+        //     key: "value",
+        //     key1: "value2",
+        //     .....
+        // }
+
+        let student = {
+            name: "angel priya",
+            year: 2015,
+            collegeName: "Darwin",
+            dob: 1999,
+            sports: ["ckricket", "chess"],
+            bioData: function () {
+                return this.name + ' Date of Birth: ' + this.dob
+            }
+        }
+
+        let schoolStudents = [{
+            name: "angel priya1",
+            year: 2015,
+            collegeName: "Darwin",
+            dob: 1999,
+            sports: ["ckricket", "chess"],
+            bioData: function () {
+                return this.name + ' Date of Birth: ' + this.dob
+            }
+        }, {
+            name: "angel priya2",
+            year: 2015,
+            collegeName: "Darwin",
+            dob: 1999,
+            sports: ["ckricket", "chess"],
+            bioData: function () {
+                return this.name + ' Date of Birth: ' + this.dob
+            }
+        }, {
+            name: "angel priya3",
+            year: 2015,
+            collegeName: "Darwin",
+            dob: 1999,
+            sports: ["ckricket", "chess"],
+            bioData: function () {
+                return this.name + ' Date of Birth: ' + this.dob
+            }
+        }];
+
+        // console.log(schoolStudents[2].collegeName);
+
+        for (i = 0; i < schoolStudents.length; i++) {
+            console.log(schoolStudents[i].name);
+        }
+
+        let x = '';
+        let y = null
+        let z;
+
+
+        // console.log(student.sports[1]);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
