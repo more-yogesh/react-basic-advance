@@ -18,7 +18,22 @@ div div h1 {
     box-shadow: 10px 10px 9px 1px #9393938f;
 }
 
-.read{
+.read {
     margin-top: 5px;
 }
 
+#subscribe {
+    background-color: beige;
+    padding: 100px;
+    /* margin-top: ;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ; */
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+/* 
+#subscribe:hover {
+    background-color: aqua;
+    border-radius: 20px;
+} */

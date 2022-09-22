@@ -7,6 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../assets/css/stylesheet.css">
+    <style>
+        .btn {
+            padding: 5px;
+            border-radius: 2px !important;
+            font-family: cursive;
+            text-transform: lowercase;
+        }
+
+        .btn-success {
+            background-color: aquamarine;
+            border: 1px solid greenyellow;
+            color: white;
+            /* border-radius: 20px !important; */
+        }
+
+        .btn-warning {
+            background-color: gold;
+            border: 1px solid goldenrod;
+            color: black;
+        }
+
+        .btn-danger {
+            background-color: brown;
+            border: 1px solid red;
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: gainsboro;
+            border: 1px solid darkgray;
+            color: white;
+        }
+
+        .btn:hover {
+            border: 1px solid black;
+            border-radius: 15px !important;
+            opacity: 0.5;
+            transition: 1s;
+            box-shadow: 3px 2px 0px 0px grey;
+        }
+    </style>
     <!-- 
         CSS
         - Class
@@ -50,6 +91,16 @@
                 ea quos, numquam natus?
             </div>
         </div>
+    </div>
+    <div id="subscribe">
+        <form action="" method="post">
+            <input type="email"><button class="btn-subscribe">subscribe</button>
+        </form>
+
+        <button class="btn btn-success">Yes I am In</button>
+        <button class="btn btn-warning">No, Cancel</button>
+        <button class="btn btn-danger">Delete It</button>
+        <button class="btn btn-secondary">Ingnor</button>
     </div>
 </body>
 
